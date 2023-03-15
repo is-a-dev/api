@@ -1,2 +1,2 @@
-# is-a-dev-api
+# is-a.dev API
 An API for is-a.dev
