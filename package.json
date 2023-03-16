@@ -1,0 +1,24 @@
+{
+  "name": "is-a-dev-api",
+  "version": "1.0.0",
+  "description": "An API for is-a.dev",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdhdev/is-a-dev-api.git"
+  },
+  "author": "William Harrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wdhdev/is-a-dev-api/issues"
+  },
+  "homepage": "https://github.com/wdhdev/is-a-dev-api#readme",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "node-fetch": "^2.6.7"
+  }
+}
