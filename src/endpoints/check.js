@@ -8,14 +8,14 @@ module.exports = async (req, res) => {
     let data;
 
     try {
-        const result = await fetch(`https://api.github.com/repos/is-a-dev/register/contents/domains/${domain}.json`);
+        const result = await fetch(`https://api.github.com/repos/is-a-dev/register/contents/domains/${domain.toLowerCase()}.json`);
 
         data = result;
     } catch(err) {
         return res.status(500);
     }
 
-    if(data.status == 404) return res.status(204).json({ "message": "DOMAIN_AVAILABLE" });
+    if(data.status == 404) return res.status(404).json({ "message": "DOMAIN_AVAILABLE" });
 
     res.status(200).json({ "message": "DOMAIN_UNAVAILABLE" });
 }
