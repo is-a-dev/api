@@ -2,7 +2,7 @@
   "name": "is-a-dev-api",
   "version": "1.0.0",
   "description": "An API for is-a.dev",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wdhdev/is-a-dev-api.git"
