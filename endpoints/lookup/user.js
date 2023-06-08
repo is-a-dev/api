@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
     const username = req.query.username;
     const email = req.query.email;
 
-    if(!username && !email) return res.status(400).json({ "error": "NO_IDENTIFIER" });
+    if(!username && !email) return res.status(400).json({ "code": "NO_IDENTIFIER" });
 
     let data;
 
@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
     if(username) {
         const userDomains = data.filter(item => item.owner.username.toLowerCase() === username.toLowerCase());
 
-        if(!userDomains.length) return res.status(404).json({ "error": "USER_NOT_FOUND" });
+        if(!userDomains.length) return res.status(404).json({ "code": "USER_NOT_FOUND" });
 
         let subdomains = [];
 
@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
     if(email) {
         const userDomains = data.filter(item => item.owner.email.replace(" (at) ", "@").toLowerCase() === email.toLowerCase());
 
-        if(!userDomains.length) return res.status(404).json({ "error": "USER_NOT_FOUND" });
+        if(!userDomains.length) return res.status(404).json({ "code": "USER_NOT_FOUND" });
 
         let subdomains = [];
 

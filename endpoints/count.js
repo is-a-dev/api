@@ -34,7 +34,7 @@ module.exports = async (req, res) => {
     domains.forEach(domain => {
         const obj = {
             "domain": domain.replace(".is-a.dev", ""),
-            "nested_subdomains": `${data.filter(item => item.domain.includes(`.${domain}`)).length}`
+            "nested_subdomains": data.filter(item => item.domain.includes(`.${domain}`)).length
         }
 
         domainData.push(obj);
@@ -45,10 +45,10 @@ module.exports = async (req, res) => {
         "individual_owners": owners,
         "domains": domainData,
         "records": {
-            "A": `${data.filter(item => item.record.A).length}`,
-            "CNAME": `${data.filter(item => item.record.CNAME).length}`,
-            "MX": `${data.filter(item => item.record.MX).length}`,
-            "TXT": `${data.filter(item => item.record.TXT).length}`
+            "A": data.filter(item => item.record.A).length,
+            "CNAME": data.filter(item => item.record.CNAME).length,
+            "MX": data.filter(item => item.record.MX).length,
+            "TXT": data.filter(item => item.record.TXT).length
         }
     })
 }

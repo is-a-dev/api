@@ -3,7 +3,7 @@ module.exports = async (req, res) => {
 
     const domain = req.query.domain;
 
-    if(!domain) return res.status(400).json({ "error": "NO_DOMAIN" });
+    if(!domain) return res.status(400).json({ "code": "NO_DOMAIN" });
 
     let data;
 

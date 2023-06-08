@@ -1,2 +1,9 @@
 # is-a.dev API
-An API for is-a.dev
+
+**Backend**
+
+![Backend](https://skillicons.dev/icons?i=nodejs,express)
+
+**Frontend**
+
+![Frontend](https://skillicons.dev/icons?i=html,tailwind)
