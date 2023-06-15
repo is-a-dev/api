@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An API for is-a.dev",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wdhdev/is-a-dev-api.git"
