@@ -46,6 +46,7 @@ module.exports = async (req, res) => {
         "domains": domainData,
         "records": {
             "A": data.filter(item => item.record.A).length,
+            "AAAA": data.filter(item => item.record.AAAA).length,
             "CNAME": data.filter(item => item.record.CNAME).length,
             "MX": data.filter(item => item.record.MX).length,
             "TXT": data.filter(item => item.record.TXT).length
