@@ -21,8 +21,9 @@ module.exports = async (req, res) => {
 
     delete data[0].domain;
     delete data[0].subdomain;
+    delete data[0].usesHosting;
 
     data = data[0];
 
-    return res.status(200).json(data);
+    res.status(200).json(data);
 }
