@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wdhdev/is-a-dev-api.git"
+    "url": "git+https://github.com/is-a-dev/api.git"
   },
   "author": "William Harrison",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wdhdev/is-a-dev-api/issues"
+    "url": "https://github.com/is-a-dev/api/issues"
   },
   "homepage": "https://api.is-a.dev",
   "dependencies": {
